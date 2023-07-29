@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning Platform</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?
+    family=Noto+Sans&family=Poppins:wght@500&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="images/logo.jpg" height="200" width="500">
+        </a>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="header-icons">
+            <a href="#"><i class='bx bxs-user' ></i></a>
+            <a href="#"><i class='bx bxs-heart' ></i></a>
+            <a href="#"><i class='bx bxs-cart'></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="home-text">
+            <h6>Best Online Learning Platform</h6>
+            <h1>Accessible Online Courses For All</h1>
+            <p>Own your future learning new skills online</p>
+            <div class="letter">
+                <form>
+                    <input type="email" placeholder="Write Your E-mail" required>
+                    <input type="submit" value="let's Start" required>
+                </form>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="images/home.jpg">
+        </div>
+    </section>
+    <section class="container">
+        <div class="container-box">
+            <div class="container-img">
+                <img src="images/con1.jpg" alt="" height="70" width="100">
+            </div>
+            <div class="container-text">
+                <h4>5K</h4>
+                <p>Online Courses</p>
+            </div>
+        </div>
+
+        <div class="container-box">
+            <div class="container-img">
+                <img src="images/con3.jpeg" alt="" height="70" width="100">
+            </div>
+            <div class="container-text">
+                <h4>5K</h4>
+                <p>Online Courses</p>
+            </div>
+        </div>
+
+        <div class="container-box">
+            <div class="container-img">
+                <img src="images/con2.jpeg" alt="" height="70" width="100">
+            </div>
+            <div class="container-text">
+                <h4>5K</h4>
+                <p>Online Courses</p>
+            </div>
+        </div>
+
+        <div class="container-box">
+            <div class="container-img">
+                <img src="images/con4.jpeg" alt="" height="70" width="100">
+            </div>
+            <div class="container-text">
+                <h4>5K</h4>
+                <p>Online Courses</p>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
